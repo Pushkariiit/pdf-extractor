@@ -2,3 +2,6 @@ fastapi
 uvicorn
 pymupdf
 python-multipart
+sqlalchemy 
+pymysql 
+python-dotenv

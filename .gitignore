@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Local environment variables
+.env
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# OS specific
+Thumbs.db
+ehthumbs.db
