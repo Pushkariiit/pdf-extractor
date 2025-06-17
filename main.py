@@ -1,11 +1,21 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import PlainTextResponse
+from fastapi.middleware.cors import CORSMiddleware
 import fitz  # PyMuPDF
 import shutil
 import os
 from tempfile import NamedTemporaryFile
 
 app = FastAPI()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 def extract_text_structured(pdf_path):
     doc = fitz.open(pdf_path)
